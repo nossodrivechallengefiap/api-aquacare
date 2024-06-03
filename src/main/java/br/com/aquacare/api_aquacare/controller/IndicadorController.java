@@ -46,7 +46,7 @@ public class IndicadorController
             
             indicadorRepository.save(novoIndicador);
 
-            return ResponseEntity.ok("Local criado com sucesso.");
+            return ResponseEntity.ok("Indicador criado com sucesso.");
         } catch (EntityNotFoundException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         } catch (Exception e) {
